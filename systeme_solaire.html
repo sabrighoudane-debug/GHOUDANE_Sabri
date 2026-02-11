@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simulation d'un système solaire dans le cadre d'une mission spatiale">
+        <meta name="auteur" content="LACHEMOT Lydia,LENGLIN Thomas,GHOUDANE Sabri">
+        <meta name="keywords" content="système solaire, Soleil, planètes, astres">
+        <meta name="date" content="2026-02-11T21:52:48+0100" >
+        <title>Système Solaire</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/rocket.png">
+    </head>
+    
+    
+    <body>
+         <header id="haut">
+        		<div class="header-left"> 
+        		<a href="index.html"> <img src="./images/rocket.png" alt="logo de la fusée"> </a> 
+        		</div>
+
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html">Mission</a></li>
+                    <li><a href="systeme_solaire.html">Système Solaire</a></li>
+                    <li><a href="planetes.html">Planète</a></li>
+                    <li><a href="fusee.html">Fusée</a></li>
+                    <li><a href="satellite.html">Satellite</a></li>
+                    <li><a href="sonde.html">Sonde</a></li>
+                </ul>
+               
+            </nav>
+            <div class="header-right">
+  					  <a href="https://www.cyu.fr/">
+       			 <img src="./images/cyLogo.png" alt="logo cergy université">
+   				 </a>
+				</div>
+
+            
+        </header>
+        <main>
+            <h1 class="darkbleu">Système Solaire</h1>
+            <figure>
+                <img src="./images/system-solaire/systemsolaire.jpg"   alt="Système solaire">
+                <figcaption><em>Système solaire (pas à l'échelle)</em></figcaption>
+            </figure>
+            
+            <section id="intro">
+                <h2>   Introduction  </h2>
+                <p>Le système solaire est l’ensemble des astres qui gravitent autour du <strong>Soleil</strong>.</p>
+                <p>Il s’est formé il y a environ <strong>4,6 milliards</strong> d’années et comprend des planètes,</p>
+                <p>des satellites naturels, des astéroïdes et des comètes.</p>
+            </section>
+            
+            <section id="detail">
+                <h2>De quoi est constitué le système solaire ?</h2>
+                <p>Le système solaire possède un Soleil qui est une étoile située au centre du système solaire. </p>
+                <p>Il représente plus de <strong>99 %</strong> de la masse totale du système solaire</p>
+                <p>et fournit l’énergie nécessaire à la vie sur Terre.</p>
+                <p>Le système solaire compte huit planètes, classées selon leur distance au Soleil :</p>
+                
+                <table class="list_planet" >
+                    <caption><em>Planètes du système solaire</em></caption>
+                    <thead>
+                        <tr>
+                            <th>Planète</th>
+                            <th>Distance à l’aphélie</th>
+                            <th>Période de révolution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mercure</td>
+                            <td>69 800 000 km</td>
+                            <td>88 jours</td>
+                        </tr>
+                        <tr>
+                            <td>Vénus</td>
+                            <td>108 900 000 km</td>
+                            <td>225 jours</td>
+                        </tr>
+                        <tr>
+                            <td>Terre</td>
+                            <td>152 100 000 km</td>
+                            <td>365 jours</td>
+                        </tr>
+                        <tr>
+                            <td>Mars</td>
+                            <td>249 200 000 km</td>
+                            <td>687 jours</td>
+                        </tr>
+                        <tr>
+                            <td>Jupiter</td>
+                            <td>816 400 000 km</td>
+                            <td>11,86 ans</td>
+                        </tr>
+                        <tr>
+                            <td>Saturne</td>
+                            <td>1 514 500 000 km</td>
+                            <td>29,5 ans</td>
+                        </tr>
+                        <tr>
+                            <td>Uranus</td>
+                            <td>3 006 300 000 km</td>
+                            <td>84 ans</td>
+                        </tr>
+                        <tr>
+                            <td>Neptune</td>
+                            <td>4 537 000 000 km</td>
+                            <td>164,8 ans</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="projet">
+                <h2>Logiciel (orienté système solaire)</h2>
+                <table class="table_systeme" >
+                    <caption>Fonctionnement du système solaire (support de simulation)</caption>
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Fonction</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Initialisation</td>
+                            <td>Chargement du système solaire</td>
+                            <td>
+                                Création du Soleil comme point central fixe et
+                                chargement des astres avec leurs paramètres orbitaux.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Référentiel</td>
+                            <td>Définition du centre</td>
+                            <td>
+                                Le Soleil est utilisé comme référentiel immobile
+                                pour le calcul des mouvements orbitaux.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calcul orbital</td>
+                            <td>Gestion des orbites</td>
+                            <td>
+                                Calcul continu de la position des planètes, satellites
+                                et autres corps autour du Soleil.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Synchronisation</td>
+                            <td>Gestion du temps</td>
+                            <td>
+                                Application d’un facteur temps pour accélérer,
+                                arréter ou redémarrer la simulation.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Affichage</td>
+                            <td>Visualisation du système</td>
+                            <td>
+                                Représentation graphique des astres et de leurs
+                                déplacements autour du Soleil.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <aside class="bleu" id="infos_systeme">
+            <h3>Infos rapides</h3>
+            <ul>
+                <li>Âge du système solaire : 4,6 milliards d’années</li>
+                <li>Nombre de planètes : 8</li>
+                <li>Étoile centrale : le Soleil</li>
+                <li>Planète la plus proche : Mercure</li>
+                <li>Planète la plus éloignée : Neptune</li>
+            </ul>
+        </aside>
+        <footer>
+            <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
+            <span>UE : Développement web – <strong>L2 Informatique</strong></span>
+            <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, Sabri<strong> GHOUDANE</strong>, groupe <strong>C</strong></span>
+            <span>Année universitaire : <strong>2025–2026</strong></span>
+        </footer>
+    </body>
+</html>

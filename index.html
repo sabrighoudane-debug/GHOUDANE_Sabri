@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simulation d'une mission spatiale dans le système solaire">
+        <meta name="auteur" content="LACHEMOT Lydia,LENGLIN Thomas,GHOUDANE Sabri">
+        <meta name="keywords" content="mission spatiale, simulation, système solaire, fusée, satellite, sonde">
+        <meta name="date" content="2026-02-11T22:09:59+0100" >
+        <title>Mission Spatiale</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/rocket.png">
+        
+        <style> 
+        .interne-style{
+         border: 2px dashed #144a99; 
+         padding: 10px; 
+         background-color: #eef6ff; 
+         } 
+         </style>
+    </head>
+    <body>
+        <header id="haut">
+        		<div class="header-left"> 
+        		<a href="index.html"> <img src="./images/rocket.png" alt="logo de la fusée"> </a> 
+        		</div>
+
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html">Mission</a></li>
+                    <li><a href="systeme_solaire.html">Système Solaire</a></li>
+                    <li><a href="planetes.html">Planète</a></li>
+                    <li><a href="fusee.html">Fusée</a></li>
+                    <li><a href="satellite.html">Satellite</a></li>
+                    <li><a href="sonde.html">Sonde</a></li>
+                </ul>
+               
+            </nav>
+            <div class="header-right">
+  					  <a href="https://www.cyu.fr/">
+       			 <img src="./images/cyLogo.png" alt="logo cergy université">
+   				 </a>
+				</div>
+
+            
+        </header>
+        
+       <nav id="menu-interne">
+        <ul> 
+        <li><a href="#presentation">Présentation</a> </li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#objectif">Objectif </a></li>
+        <li><a href="#spec">Spécification</a></li>
+        </ul>
+       </nav>
+         
+        <main>
+            <h1 class="darkbleu">Mission Spatiale</h1>
+           <figure>
+                    <img src="./images/plan-site.png" alt="diagramme du plan de notre site">
+                    <figcaption>Plan du site</figcaption>
+                </figure>
+            <section id="presentation">
+                <h2>   Introduction  </h2>
+                <p>Ce projet a été réalisé par un groupe de trois étudiants en</p>
+                <p><strong>Licence 2 Informatique</strong> dans l'université de Cergy-Pontoise. </p>
+                <p>Il s’inscrit dans le cadre de notre formation universitaire et vise à mettre en pratique</p>
+                <p>nos compétences en programmation orienté objet, en conception logicielle</p>
+                <p>et en développement d’interfaces graphique.</p>
+            </section>
+             <section id="equipe">
+            		<h2>Equipe: </h2>
+            		<ul>
+            		
+            		<li class="interne-style">Lydia LACHEMOT
+            			<p>- Rôle : architecture,logique métier, contrôleur</p>
+            		
+            		</li>
+            		<li class="interne-style">Thomas LENGLIN
+            			<p>- Rôle : développement, interface graphique,contrôleur  </p>
+            		</li>
+            		<li class="interne-style">Sabri GHOUDANE
+            			<p>- Rôle : interface graphique, documentation ,contrôleur </p>
+            		</li>
+            		
+            		</ul>
+            </section>
+            
+            <section id="objectif">
+                <h2>   Objectif du projet GLP</h2>
+                <p>Le but du projet Génie Logiciel nommé SPATIAL est d'effectuer une simulation de l’industrie spatiale,
+                <p>en particulier le lancement des fusées qui portent les satellites ou les sondes.</p>
+                <p>Il faut ainsi simuler des comportements en termes de missions de satellites </p>
+                <p>(pour la planète Terre) et des sondes pour d’autres planètes.</p>
+                <p>Il doit donc en résulter des animations pédagogiques des fonctionnements des systèmes.</p>
+           
+            
+            </section>
+            
+            
+            
+            <section id="spec">
+            <h2>    Spécification de la mission</h2>
+            <p>
+                Notre logiciel permet de simuler différentes missions spatiales
+                en s’appuyant sur un modèle simplifié du système solaire.
+            </p>
+            <p>Trois missions principales peuvent être réalisées.</p>
+            <section id="LEO">
+                <h3>1. Mise en orbite basse terrestre (LEO)</h3>
+                <p>La première mission consiste à envoyer un satellite en</p>
+                <strong>orbite basse autour de la Terre</strong> (Low Earth Orbit).
+                <p> Cette orbite se situe à une altitude relativement faible
+                    (généralement entre 160 km et 2 000 km).
+                </p>
+                <p>
+                    Dans cette mission, le logiciel doit :
+                </p>
+                <ul>
+                    <li>Simuler le décollage de la fusée depuis la Terre ;</li>
+                    <li>Calculer la vitesse nécessaire pour atteindre l’orbite ;</li>
+                    <li>Stabiliser le satellite autour de la Terre ;</li>
+                    <li>Maintenir une trajectoire circulaire stable.</li>
+                </ul>
+            </section>
+           
+            <section id="GEO">
+                <h3>2. Mise en orbite géostationnaire (GEO)</h3>
+                <p>
+                    La deuxième mission consiste à placer un satellite en
+                    <strong>orbite géostationnaire</strong>.
+                    Cette orbite se situe à environ 35 786 km d’altitude
+                </p>
+                <p>et permet au satellite de rester fixe par rapport à un point de la surface terrestre.</p>
+                <p>
+                    Le logiciel doit alors :
+                </p>
+                <ul>
+                    <li>Atteindre une altitude beaucoup plus élevée ;</li>
+                    <li>Ajuster précisément la vitesse orbitale ;</li>
+                    <li>Synchroniser la période de révolution du satellite avec la rotation de la Terre ;</li>
+                    <li>Garantir une position stable au-dessus de l’équateur.</li>
+                </ul>
+            </section>
+            <section id="interplanetaire">
+                <h3>3. Envoi d’une sonde vers une autre planète</h3>
+                <p>
+                    La troisième mission consiste à envoyer une <strong>sonde spatiale
+                    vers une autre planète</strong> du système solaire.
+                </p>
+                <p>
+                    Cette mission est plus complexe car elle implique :
+                </p>
+                <ul>
+                    <li>Le calcul d’une trajectoire interplanétaire ;</li>
+                    <li>La prise en compte du mouvement des planètes autour du Soleil ;</li>
+                    <li>Des corrections de trajectoire en cours de voyage ;</li>
+                    <li>L’arrivée en orbite ou l’atterrissage sur la planète cible.</li>
+                </ul>
+                 </section>
+            </section>
+            <aside class ="bleu" style="text-decoration: underline;" id="ressources">
+                <h2>Ressources utiles</h2>
+                <ol>
+                    <li>
+                    Departement informatique de l'université : <a href="https://depinfo.u-cergy.fr/">Site officiel</a>
+                    </li>
+                    <li >
+                        Cours en Génie Logiciel : <a href="https://depinfo.u-cergy.fr/~tliu/glp.php">Cours GLP</a>
+                    </li>
+                    <li>
+                        <p>Lancement de la mission <em>Mars Science Laboratory</em> : <a href="https://en.wikipedia.org/wiki/Mars_Science_Laboratory?id=#Launch_vehicle">Voir </a></p>
+                    </li>
+                    <li>
+                        Ouvrir la notice readme : <a href="./README.pdf" target="_blank">README.pdf</a>
+                    </li>
+                </ol>
+            </aside>
+        </main>
+        <footer>
+            <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
+            <span>UE : Développement web – <strong>L2 Informatique</strong></span>
+            <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, Sabri <strong>GHOUDANE</strong>, groupe <strong>C</strong></span>
+            <span>Année universitaire : <strong>2025–2026</strong></span>
+        </footer>
+    </body>
+</html>

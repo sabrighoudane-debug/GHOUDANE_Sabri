@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simulation d'une sonde spatiale dans le système solaire">
+        <meta name="auteur" content="LACHEMOT Lydia,LENGLIN Thomas,GHOUDANE Sabri">
+        <meta name="keywords" content="sonde spatiale, Voyager 1, exploration, système solaire">
+        <meta name="date" content="2026-02-11T21:43:32+0100" >
+        <title>Sonde</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/rocket.png">
+    </head>
+    <body>
+         <header id="haut">
+        		<div class="header-left"> 
+        		<a href="index.html"> <img src="./images/rocket.png" alt="logo de la fusée"> </a> 
+        		</div>
+
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html">Mission</a></li>
+                    <li><a href="systeme_solaire.html">Système Solaire</a></li>
+                    <li><a href="planetes.html">Planète</a></li>
+                    <li><a href="fusee.html">Fusée</a></li>
+                    <li><a href="satellite.html">Satellite</a></li>
+                    <li><a href="sonde.html">Sonde</a></li>
+                </ul>
+               
+            </nav>
+            <div class="header-right">
+  				<a href="https://www.cyu.fr/">
+       			 <img src="./images/cyLogo.png" alt="logo cergy université">
+   				 </a>
+			</div>
+
+            
+        </header>
+        <main>
+            <h1 class="darkbleu">Sonde</h1>
+            <figure>
+                <img src="./images/sonde/Voyager_spacecraft_model.png"   alt="image de la sonde Voyager 1">
+                <figcaption>Sonde spatiale : <em>Voyager 1</em></figcaption>
+            </figure>
+            <section id="intro">
+                <h2>  Introduction   </h2>
+                <p>L’exploration de l’espace ne se fait pas uniquement avec des astronautes.</p>
+                <p>Pour aller très loin dans le Système solaire, les scientifiques utilisent</p>
+                <p>des sondes spatiales. Ces engins automatiques permettent d’étudier des astres</p>
+                <p>inaccessibles à l’Homme et de mieux comprendre l’Univers.</p>
+            </section>
+            <section id="detail">
+                <h2>Qu’est-ce qu’une sonde spatiale ?</h2>
+                <p>Une sonde spatiale est un appareil spatial sans équipage humain, conçu pour</p>
+                <p>explorer l’espace et étudier des planètes, des lunes, des astéroïdes ou le Soleil.</p>
+                <p>Elle communique avec la Terre grâce aux ondes radio et fonctionne de manière autonome.</p>
+            </section>
+            <section id="types">
+                <h2>Les principaux types de sondes</h2>
+                <table>
+                    <caption>Types de Sondes</caption>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Sondes d'impact</strong> : Modifier la trajectoire d'un corp céleste (astéroïdes)</td>
+                            <td>
+                                <figure>
+                                    <img src="./images/sonde/sonde_impact.jpg"   alt="illustration de la sonde Dart">
+                                    <figcaption>Sonde d'impact : <a href="https://fr.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"><em>Dart</em></a></figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sondes orbitaires</strong> : se placent en orbite autour d’un astre</td>
+                            <td>
+                                <figure>
+                                    <img src="./images/sonde/sonde_orbital.jpg"  alt="image de la sonde Luna orbiter 1">
+                                    <figcaption>Sonde Luna orbiter 1 du <a href="https://fr.wikipedia.org/wiki/Programme_Lunar_Orbiter"><em>Programme Lunar Orbiter</em></a></figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sondes d’atterrissage</strong> : se posent à la surface</td>
+                            <td>
+                                <figure>
+                                    <img src="./images/sonde/sonde_landing.jpg"   alt="image de la sonde InSight">
+                                    <figcaption>Sonde d'atterissage sur Mars : <a href="https://en.wikipedia.org/wiki/InSight"><em>InSight</em></a></figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rovers</strong> : véhicules mobiles explorant le sol</td>
+                            <td>
+                                <figure>
+                                    <img src="./images/sonde/sonde_riding.jpg"  alt="Sonde Curiosity">
+                                    <figcaption>Rovers <em>Curiosity</em> : <a href="https://en.wikipedia.org/wiki/Mars_Science_Laboratory"><em>Mars Science Laboratory</em></a></figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="projet">
+                <h2>Logiciel(orienté sonde)</h2>
+                <table class="table_sonde" >
+                    <caption>Fonctionnement de la sonde spatiale</caption>
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Fonction</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Navigation</td>
+                            <td>Contrôle de trajectoire</td>
+                            <td>
+                                Utilisation des propulseurs et des capteurs pour
+                                ajuster la trajectoire dans l’espace.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Observation</td>
+                            <td>Collecte de données</td>
+                            <td>
+                                Activation des instruments scientifiques pour
+                                analyser l’astre ciblé.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Transmission</td>
+                            <td>Communication avec la Terre</td>
+                            <td>
+                                Envoi des données vers la Terre via antenne
+                                et signaux radio.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Atterrissage</td>
+                            <td>Descente contrôlée</td>
+                            <td>
+                                Réduction de la vitesse et stabilisation pour
+                                un atterrissage sécurisé.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Analyse au sol</td>
+                            <td>Études de surface</td>
+                            <td>
+                                Mesures chimiques, physiques ou visuelles
+                                directement sur l’astre.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
+            <span>UE : Développement web – <strong>L2 Informatique</strong></span>
+            <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, Sabri<strong> GHOUDANE</strong>, groupe <strong>C</strong></span>
+            <span>Année universitaire : <strong>2025–2026</strong></span>
+        </footer>
+    </body>
+</html>

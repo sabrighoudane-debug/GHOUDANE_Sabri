@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simulation d'une fusée spatiale dans le système solaire">
+        <meta name="auteur" content="LACHEMOT Lydia,LENGLIN Thomas,GHOUDANE Sabri">
+        <meta name="keywords" content="fusée spatiale, Ariane 6, propulsion, système solaire">
+        <meta name="date" content="2026-02-11T21:43:16+0100" >
+        <title>Fusée Spatiale</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="./images/rocket.png">
+    </head>
+    <body>
+        <header id="haut">
+        		<div class="header-left"> 
+        		<a href="index.html"> <img src="./images/rocket.png" alt="logo de la fusée"> </a> 
+        		</div>
+
+            <nav id="menu-principal">
+                <ul>
+                    <li><a href="index.html">Mission</a></li>
+                    <li><a href="systeme_solaire.html">Système Solaire</a></li>
+                    <li><a href="planetes.html">Planète</a></li>
+                    <li><a href="fusee.html">Fusée</a></li>
+                    <li><a href="satellite.html">Satellite</a></li>
+                    <li><a href="sonde.html">Sonde</a></li>
+                </ul>
+               
+            </nav>
+            <div class="header-right">
+  					  <a href="https://www.cyu.fr/">
+       			 <img src="./images/cyLogo.png" alt="logo cergy université">
+   				 </a>
+				</div>
+
+            
+        </header>
+        <main>
+            <h1 class="darkbleu">Fusée</h1>
+            <figure>
+                <img src="./images/fusee/Ariane.jpg"  alt="image d'une de la fusée Ariane 6">
+                <figcaption>Fusée spatiale : <em>Ariane 6</em></figcaption>
+            </figure>
+            
+            <section id="intro">
+                <h2>  Introduction   </h2>
+                <p>Depuis toujours, l’Homme cherche à explorer l’espace.</p>
+                <p>Pour quitter la Terre et voyager au-delà de son atmosphère, un engin est indispensable : la <strong>fusée spatiale</strong>.</p>
+                <p>Elle permet d’envoyer des <strong>satellites</strong>, des <strong>sondes</strong> et même des <strong>astronautes</strong> dans l’espace.</p>
+                <p>Mais comment fonctionne une fusée et à quoi sert-elle exactement ?</p>
+            </section>
+            <section id="detail">
+                <h2>  Qu’est-ce qu’une fusée spatiale ? </h2>
+                <p>Une fusée spatiale est un véhicule capable de se déplacer dans l’espace grâce à la propulsion par réaction.</p>
+                <p>Contrairement aux avions, elle n’a pas besoin d’air pour avancer.</p>
+                <p>Elle fonctionne selon le principe d’action-réaction (troisième loi de Newton<a href="#note1"><sup>1</sup></a>) : en expulsant des gaz</p>
+                <p> à très grande vitesse vers l’arrière, la fusée est propulsée vers l’avant.</p>
+            </section>
+            <section id="fonctionnement">
+                <h2>   Les différentes parties d’une fusée</h2>
+                <figure>
+                    <img src="./images/fusee/fusee-fonct.png"  alt="fonctionnement d'une fusée">
+                    <figcaption>Schéma technique d'une fusée</figcaption>
+                </figure>
+                <p>Une fusée est généralement composée de plusieurs éléments :</p>
+                <ul>
+                    <li><strong>Les étages</strong></li>
+                    <li>
+                        <p>La plupart des fusées ont plusieurs étages empilés. Chaque étage contient des moteurs et du carburant.</p>
+                    <li>
+                        <p> Lorsqu’un étage est vide, il est largué pour alléger la fusée.</p>
+                    </li>
+                    <li><strong>Les moteurs</strong></li>
+                    <li>
+                        <p>Ils brûlent le carburant pour produire une énorme poussée<a href="#note2"><sup>2</sup></a>.</p>
+                    </li>
+                    <li><strong>Le carburant</strong></li>
+                    <li>
+                        <p>Il est composé d’un combustible et d’un comburant (souvent de l’oxygène liquide).</p>
+                    </li>
+                    <li><strong>La charge utile</strong></li>
+                    <li>
+                        <p>C’est ce que la fusée transporte dans l’espace (<strong>satellites</strong>,<strong>sondes</strong> et <strong>astronautes</strong>).</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="projet">
+                <h2> Logiciel (orienté fusée) </h2>
+                <table class="table_fusee">
+                    <caption>Fonctionnement de la fusée spatiale</caption>
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Fonction</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Décollage</td>
+                            <td>Quitter la Terre</td>
+                            <td>
+                                Les moteurs principaux s’allument et génèrent une poussée
+                                supérieure à la gravité terrestre.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mise en orbite</td>
+                            <td>Stabilisation orbitale</td>
+                            <td>
+                                Ajustement de la vitesse et de l’inclinaison pour maintenir
+                                une trajectoire circulaire autour de la Terre.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Largage</td>
+                            <td>Déployer la charge utile</td>
+                            <td>
+                                La coiffe s’ouvre et la sonde ou le satellite est libéré
+                                dans l’espace.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Trajet spatial</td>
+                            <td>Voyage interplanétaire</td>
+                            <td>
+                                Les moteurs s’activent par impulsions pour corriger la trajectoire
+                                vers un autre astre.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Atterrissage</td>
+                            <td>Poser la fusée</td>
+                            <td>
+                                Réduction de la vitesse et utilisation de systèmes de freinage
+                                et d’atterrissage.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Redécollage</td>
+                            <td>Quitter l’astre</td>
+                            <td>
+                                Réactivation des moteurs pour échapper à la gravité locale.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Retour sur Terre</td>
+                            <td>Rentrée atmosphérique</td>
+                            <td>
+                                Protection thermique, freinage atmosphérique et atterrissage final.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <aside class="bleu" id="notes">
+                <h2>Notes</h2>
+                <ol>
+                    <li id="note1">
+                        <p>3e loi de Newton : pour chaque action, il y a une réaction égale et opposée.</p>
+                    </li>
+                    <li id="note2">
+                        <p>La poussée : force exprimée en newtons (N) opposée au mouvement de la fusée.</p>
+                    </li>
+                </ol>
+            </aside>
+        </main>
+        <footer>
+            <a class="hautPage" href="#haut">↑ HAUT DE PAGE ↑</a>
+            <span>UE : Développement web – <strong>L2 Informatique</strong></span><br>
+            <span>Lydia <strong>LACHEMOT</strong>, Thomas <strong>LENGLIN</strong>, Sabri<strong> GHOUDANE</strong>, groupe <strong>C</strong></span><br>
+            <span>Année universitaire : <strong>2025–2026</strong></span>
+        </footer>
+    </body>
+</html>
